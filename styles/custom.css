@@ -1,0 +1,60 @@
+.hambMenu {
+    aspect-ratio: 1/1;
+    width: 32px;
+    height: auto;
+    position: relative;
+}
+
+.hambMenu div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+
+    height: 4px;
+    border-radius: 1em;
+    background-color: var(--cl-base-white);
+    transition: width 0.3s ease-in-out, rotate 0.3s ease-in-out, transform 0.3s ease-in-out;
+    
+    width: 100%;
+}
+
+.hambMenu div:nth-child(1) {
+    transform: translateY(-250%);
+}
+.hambMenu div:nth-child(2) {
+    transform: translateY(0%);
+}
+.hambMenu div:nth-child(3) {
+    transform: translateY(250%);
+}
+
+.hambMenu[data-state="close"] div:nth-child(1) {
+    rotate: 0;
+}
+.hambMenu[data-state="close"] div:nth-child(2) {
+    rotate: 0;
+}
+.hambMenu[data-state="close"] div:nth-child(3) {
+    rotate: 0;
+}
+
+.hambMenu[data-state="open"] div:nth-child(1) {
+    rotate: 45deg;
+    transform: translateY(0);
+}
+.hambMenu[data-state="open"] div:nth-child(2) {
+    width: 0%;
+}
+.hambMenu[data-state="open"] div:nth-child(3) {
+    rotate: -45deg;
+    transform: translateY(0);
+}
+
+/*
+<div data-state="close" class="hambMenu">
+    <div></div>
+    <div></div>
+    <div></div>
+</div> 
+*/

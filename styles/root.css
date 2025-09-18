@@ -1,0 +1,30 @@
+:root {
+    /* Colors */
+    --cl-primary: #3646F4;
+    --cl-secondary: #F50065;
+
+    --cl-highlight1: #F5ED01;
+    --cl-highlight2: #6200F5;
+    
+    --cl-secondary-t: #F5ED0180;
+
+    --cl-th-bg-dark1: #121212;
+    --cl-th-bg-dark2: #f1f1f1;
+    --cl-th-bg-light1: #f4f4f4;
+    --cl-th-bg-light2: #212121;
+
+    --cl-th-bg-light1-t: #12121240;
+    --cl-th-bg-dark1-t: #F4F4F440;
+
+    --cl-th-bg-gray: #838383;
+
+    --cl-base-black: #000000;
+    --cl-base-white: #ffffff;
+    
+    --cl-overlay-1: #00000080;
+
+    /* Font's */
+    --ft-size-1: 1rem;
+    --ft-size-2: 1.2rem;
+    --ft-size-3: 1.5rem;
+}

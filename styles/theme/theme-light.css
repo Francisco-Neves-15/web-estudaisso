@@ -1,0 +1,8 @@
+:root {
+    --th-background-1: var(--cl-th-bg-light1);
+    --th-background-2: var(--cl-th-bg-light2);
+    --th-text-1: var(--cl-th-bg-dark1);
+    --th-text-2: var(--cl-th-bg-dark2);
+    --th-hover-1: var(--cl-th-bg-light1-t);
+    --th-highlight: var(--cl-highlight2);
+}

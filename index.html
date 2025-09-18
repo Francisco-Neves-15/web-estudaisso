@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark" data-screen="" dir="ltr" version="0.1b">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ESTUDA ISSO!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Styles -->
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/root.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/globals.css'>
+    <!-- Styles Components -->
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/custom.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='components/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='components/footer.css'>
+    <!-- Pages -->
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/index.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/screens/truthtabletrainer.css'>
+    <!-- Theme -->
+    <link id="link-theme" rel='stylesheet' type='text/css' media='screen' href='styles/theme/theme-dark.css'>
+    <!-- Scripts -->
+    <script type="module" src="scripts/main.js"></script>
+    <!-- Scripts Components -->
+    <!-- <script type="module" src='components/header.js'></script> -->
+    <!-- Imports -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- FavIcon -->
+    <link rel="icon" type="image/x-icon" href="public/assets/images/logos/logo.png">
+    <!-- Font's -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body class="hasTh">
+    
+    <a tabindex="1" id="link-jump-mainContent" href="#main">Ir para conteúdo principal</a>
+
+    <header aria-expanded="false" class="hasTh" id="header">
+        <div class="header-content">
+            <h1 class="hasTh logoHeader">ESTUDA ISSO!</h1>
+            <button style="display: none !important;" id="btn-navbar-toggle-lang" class="hasTh btn-navbar">
+                <div class="gIcon header-icon">
+                    <svg id="header-icon-translate" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                    <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+                    <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+                    </svg>
+                </div>
+            </button>
+            <button id="btn-navbar-toggle-theme" class="hasTh btn-navbar">
+                <div class="gIcon header-icon">
+                    <svg id="header-icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                        <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                    </svg>
+                    <svg id="header-icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                        <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                    </svg>
+                </div>
+            </button>
+            <button id="btn-navbar-open" class="hasTh btn-navbar btn-navbar-open">
+                <div class="gIcon header-icon">
+                    <svg id="header-icon-menu" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path d="M1 13.3333C1 13.1565 1.06705 12.987 1.18639 12.8619C1.30573 12.7369 1.46759 12.6667 1.63636 12.6667H14.3636C14.5324 12.6667 14.6943 12.7369 14.8136 12.8619C14.933 12.987 15 13.1565 15 13.3333C15 13.5101 14.933 13.6797 14.8136 13.8047C14.6943 13.9298 14.5324 14 14.3636 14H1.63636C1.46759 14 1.30573 13.9298 1.18639 13.8047C1.06705 13.6797 1 13.5101 1 13.3333ZM1 8C1 7.82319 1.06705 7.65362 1.18639 7.5286C1.30573 7.40357 1.46759 7.33333 1.63636 7.33333H14.3636C14.5324 7.33333 14.6943 7.40357 14.8136 7.5286C14.933 7.65362 15 7.82319 15 8C15 8.17681 14.933 8.34638 14.8136 8.47141C14.6943 8.59643 14.5324 8.66667 14.3636 8.66667H1.63636C1.46759 8.66667 1.30573 8.59643 1.18639 8.47141C1.06705 8.34638 1 8.17681 1 8ZM1 2.66667C1 2.48986 1.06705 2.32029 1.18639 2.19526C1.30573 2.07024 1.46759 2 1.63636 2H14.3636C14.5324 2 14.6943 2.07024 14.8136 2.19526C14.933 2.32029 15 2.48986 15 2.66667C15 2.84348 14.933 3.01305 14.8136 3.13807C14.6943 3.2631 14.5324 3.33333 14.3636 3.33333H1.63636C1.46759 3.33333 1.30573 3.2631 1.18639 3.13807C1.06705 3.01305 1 2.84348 1 2.66667Z"/>
+
+                    </svg>
+                </div>
+            </button>
+        </div>
+        <nav class="" id="navbar">
+            <button id="btn-navbar-close" class=" btn-navbar btn-navbar-close">
+                <div class="gIcon header-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </div>
+            </button>
+            <ul id="navbar-list">
+                <li><a class="hvAnim fRight bot" href="#main-container-truthtable">Tabela Verdade</a></li>
+            </ul>
+        </nav>
+        <div class="overlay ov-header" id="ov-header" inert=""></div>
+    </header>
+
+    <main id="main">
+        <!-- <iframe id="frame-content" name="truthtabletrainer" src="screens/truthtabletrainer.html" frameborder="0"></iframe> -->
+
+        <div id="main-container-truthtable" class="main-container truthtable">
+
+            <h2 class="hasTh">Tabela Verdade</h2>
+
+            <div class="box-config truthtable-config">
+                <div class="box-config-options">
+                    <section>
+                        <h3 class="hasTh">Dificuldade</h3>
+                        <div class="hasTh select-wrapper">
+                            <select class="hasTh select-dropbox select-difficulty truthtable" name="truthtable-difficulty" id="select-truthtable-difficulty">
+                                <option value="nv1">Nível 1</option>
+                                <option value="nv2">Nível 2</option>
+                                <option value="nv3">Nível 3</option>
+                                <option value="nv4">Nível 4</option>
+                                <option value="nv5">Nível 5</option>
+                            </select>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="hasTh">Símbolos (Notação)</h3>
+                        <div class="hasTh select-wrapper">
+                            <select class="hasTh select-dropbox select-simbolos truthtable" name="truthtable-simbolos" id="select-truthtable-simbolos">
+                                <option value="sim-programacao">Programação</option>
+                                <option value="sim-matematica">Matemática</option>
+                                <option value="sim-algebra">Álgebra Booleana</option>
+                            </select>
+                        </div>
+                    </section>
+                </div>
+                <button class="hasTh btn btn-normal">Gerar Tabela Verdade</button>
+            </div>
+
+            <form action="" class="form-table" id="form-truthtable">
+                <div class="geral-table-content" id="truthtable-content">
+                    <table class="hasTh geral-table" id="truthtable-table">
+                        <thead>
+                            <tr>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="truthtable-content-bottom">
+                    <button class="hasTh btn btn-normal">Conferir</button>
+                </div>
+            </form>
+
+            <!--  -->
+
+            <div class="box-operacoes">
+                <h2 class="hasTh">Operações (Notações)</h2>
+                <div class="geral-table-content" id="operacoestable-content"> 
+                    <table class="hasTh geral-table" id="operacoestable-table">
+                        <thead>
+                            <tr>
+                                <th>Operação</th>
+                                <th>Programação (C/Java/JS)</th>
+                                <th>Matemática / Lógica Formal</th>
+                                <th>Álgebra Booleana</th>
+                                <th>Eletrônica / Circuitos Digitais</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AND (E)</td>
+                                <td><code>&amp;&amp;</code></td>
+                                <td>∧</td>
+                                <td>· ou AB</td>
+                                <td class="thW-img"><img src="public/assets/images/portaslogicas/portas-logicas-and.webp" alt="portas-logicas-and"></td>
+                            </tr>
+                            <tr>
+                                <td>OR (OU)</td>
+                                <td><code>||</code></td>
+                                <td>∨</td>
+                                <td>+</td>
+                                <td class="thW-img"><img src="public/assets/images/portaslogicas/portas-logicas-or.webp" alt="portas-logicas-or"></td>
+                            </tr>
+                            <tr>
+                                <td>NOT (NÃO)</td>
+                                <td><code>!A</code></td>
+                                <td>¬A</td>
+                                <td>Ȧ ou A' (traço sobre)</td>
+                                <td class="thW-img"><img src="public/assets/images/portaslogicas/portas-logicas-not.webp" alt="portas-logicas-not"></td>
+                            </tr>
+                            <tr>
+                                <td>XOR (OU exclusivo / diferente)</td>
+                                <td><code>^</code> (bitwise)</td>
+                                <td>⊕</td>
+                                <td>⊕</td>
+                                <td class="thW-img"><img src="public/assets/images/portaslogicas/portas-logicas-xor.webp" alt="portas-logicas-xor"></td>
+                            </tr>
+                            <tr>
+                                <td>NAND (não-AND)</td>
+                                <td><code>!(A &amp;&amp; B)</code></td>
+                                <td>↑</td>
+                                <td>(AB)'</td>
+                                <td class="thW-img"><img src="public/assets/images/portaslogicas/portas-logicas-nand.webp" alt="portas-logicas-nand"></td>
+                            </tr>
+                            <tr>
+                                <td>NOR (não-OR)</td>
+                                <td><code>!(A || B)</code></td>
+                                <td>↓</td>
+                                <td>(A + B)'</td>
+                                <td class="thW-img"><img src="public/assets/images/portaslogicas/portas-logicas-nor.webp" alt="portas-logicas-nor"></td>
+                            </tr>
+                            <tr>
+                                <td>XNOR (equivalência)</td>
+                                <td><code>!(A ^ B)</code></td>
+                                <td>↔</td>
+                                <td>⊙ ou (A ⊕ B)'</td>
+                                <td class="thW-img"><img src="public/assets/images/portaslogicas/portas-logicas-xnor.webp" alt="portas-logicas-xnor"></td>
+                            </tr>
+                            <tr>
+                                <td>Implicação (se...então)</td>
+                                <td><code>!A || B</code></td>
+                                <td>→</td>
+                                <td>A' + B</td>
+                                <td class="thW-list">
+                                    <p>Equivalente à:</p>
+                                    <ul>
+                                        <li>1 porta NOT, para inverter A</li>
+                                        <li>1 porta OR para ligar (¬A) e B</li>
+                                    </ul>
+                                    <p>Resultando, na saída: ¬A + B</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Bicondicional (se e somente se)</td>
+                                <td><code>A == B</code></td>
+                                <td>↔</td>
+                                <td>(AB) + (A'B')</td>
+                                <td>Equivalente à: XNOR</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer id="footer" class="hasTh">
+        <div class="footer-content">
+            <div class="footer-box copyright">
+                <p class="hasTh">© 2025 ESTUDA ISSO</p>
+                <p class="hasTh">Todos os Direitos Reservados.</p>
+            </div>
+            <div class="footer-box developer">
+                <p class="hasTh">Dev by: </p>
+                <p><a class="hvAnim fMid bot hvSecondary hasTh" href="https://github.com/Francisco-Neves-15">Francisco-Neves-15</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
