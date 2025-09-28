@@ -107,6 +107,7 @@ ul li {
     opacity: 0;
     pointer-events: none;
     z-index: -1;
+    transition: opacity 0.3s ease-in-out;
 }
 .overlay.show {
     opacity: 1;
@@ -182,9 +183,9 @@ ul li {
 
     padding: 0.5em 1em;
     background-color: var(--th-background-1);
-    outline: 4px solid var(--cl-base-white);
+    outline: 4px solid var(--th-background-2);
     
-    color: var(--cl-base-white);
+    color: var(--th-text-1);
     font-size: clamp(1rem, 3vw, 1.2rem);
     font-weight: bold;
     letter-spacing: 2px;

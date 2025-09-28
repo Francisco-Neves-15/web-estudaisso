@@ -43,8 +43,23 @@ header {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
-.btn-navbar:hover {
-  background-color: var(--th-hover-1);
+
+/* Small */
+@media screen and (min-width: 500px) {
+  .btn-navbar:hover { background-color: transparent; }
+  .btn-navbar:active { background-color: var(--th-hover-1); }
+}
+
+/* Medium */
+@media screen and (min-width: 501px) and (max-width: 1199px) {
+  .btn-navbar:hover { background-color: transparent; }
+  .btn-navbar:active { background-color: var(--th-hover-1); }
+}
+
+/* Large */
+@media screen and (min-width: 1200px) {
+  .btn-navbar:hover { background-color: var(--th-hover-1); }
+  .btn-navbar:active { background-color: transparent; }
 }
 
 .header-icon svg {
@@ -135,7 +150,7 @@ html[data-theme="dark"] #header-icon-sun { display: none; }
     min-width: 50%;
     width: auto;
     max-width: 60%;
-  }  
+  }
 }
 
 /* Large */

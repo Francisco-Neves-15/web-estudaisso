@@ -11,14 +11,12 @@ export function toggleHeader(type) {
     function hOpen() {
         header.setAttribute("aria-expanded", "true");
         navbar.removeAttribute("inert", "");
-        ov_header.classList.add("show");
-        // ### overlay_config(ov_header, "open")
+        overlay_config(ov_header, "open")
     }
     function hClose() {
         header.setAttribute("aria-expanded", "false");
         navbar.setAttribute("inert", "true");
-        ov_header.classList.remove("show");
-        // ### overlay_config(ov_header, "close")
+        overlay_config(ov_header, "close")
     }
 
     if (type === "initial") {
@@ -26,7 +24,7 @@ export function toggleHeader(type) {
         // Event's on click
         btn_navbar_open.addEventListener("click", () => { toggleHeader("open") });
         btn_navbar_close.addEventListener("click", () => { toggleHeader("close") });
-        // ### ov_header.addEventListener("click", () => { overlay_config(ov_header, "close") });
+        overlay_config(ov_header, "initial")
         // Initial Close
         hClose()
         return
@@ -37,6 +35,8 @@ export function toggleHeader(type) {
         return
     } else if (type === "open") {
         hOpen();
+        return
+    } else {
         return
     }
 

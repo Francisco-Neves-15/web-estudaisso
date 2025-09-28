@@ -15,7 +15,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='components/footer.css'>
     <!-- Pages -->
     <link rel='stylesheet' type='text/css' media='screen' href='styles/index.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles/screens/truthtabletrainer.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/features/truthtabletrainer.css'>
     <!-- Theme -->
     <link id="link-theme" rel='stylesheet' type='text/css' media='screen' href='styles/theme/theme-dark.css'>
     <!-- Scripts -->
@@ -81,7 +81,7 @@
     </header>
 
     <main id="main">
-        <!-- <iframe id="frame-content" name="truthtabletrainer" src="screens/truthtabletrainer.html" frameborder="0"></iframe> -->
+        <!-- <iframe id="frame-content" name="truthtabletrainer" src="features/truthtabletrainer.html" frameborder="0"></iframe> -->
 
         <div id="main-container-truthtable" class="main-container truthtable">
 
@@ -112,24 +112,32 @@
                         </div>
                     </section>
                 </div>
-                <button class="hasTh btn btn-normal">Gerar Tabela Verdade</button>
+                <button id="btn-gen-truthtable" class="hasTh btn btn-normal">Gerar Tabela Verdade</button>
             </div>
 
             <form action="" class="form-table" id="form-truthtable">
                 <div class="geral-table-content" id="truthtable-content">
-                    <table class="hasTh geral-table" id="truthtable-table">
+                    <table class="hasTh geral-table truthtable-table" id="truthtable-table">
                         <thead>
                             <tr>
-                                <th>1</th>
-                                <th>2</th>
-                                <th>3</th>
+                                <th>A</th>
+                                <th>B</th>
+                                <th>C</th>
+                                <th>!A</th>
+                                <th>!B</th>
+                                <th>!C</th>
+                                <th>A && B</th>
+                                <th>A && C</th>
+                                <th>B && C</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
+                                <td class="ttCel base"><input onfocus="this.select();" maxlength="1" value="" type="text"></td>
+                                <td class="ttCel corret"><input value="" type="text"></td>
+                                <td class="ttCel wrong"><input value="" type="text"></td>
+                                <td class="ttCel warning"><input value="" type="text"></td>
+                                <td class="ttCel"><input value="" type="text"></td>
                             </tr>
                         </tbody>
                     </table>

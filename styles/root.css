@@ -23,6 +23,12 @@
     
     --cl-overlay-1: #00000080;
 
+    --cl-ttCel-base-bg: var(--th-background-2);
+    --cl-ttCel-base-tx: var(--th-text-2);
+    --cl-ttCel-corret: #54F44680;
+    --cl-ttCel-wrong: #EB342A80;
+    --cl-ttCel-warning: #F5A43380;
+
     /* Font's */
     --ft-size-1: 1rem;
     --ft-size-2: 1.2rem;

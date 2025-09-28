@@ -4,5 +4,6 @@
     --th-text-1: var(--cl-th-bg-light1);
     --th-text-2: var(--cl-th-bg-light2);
     --th-hover-1: var(--cl-th-bg-dark1-t);
+    --th-hover-2: var(--cl-th-bg-light1-t);
     --th-highlight: var(--cl-highlight1);
 }
